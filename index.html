@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="login-page">
+
+    <section class="login-form">
+      <form action="#" method="post">
+        <h1>Login</h1>
+        <p class="subtitle">Klinik Gigi Dontol</p>
+
+        <div class="field">
+          <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" autocomplete="email">
+          <p class="error" id="email-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <div class="password-wrap">
+            <input type="password" id="password" name="password" placeholder="Password" aria-label="Password" autocomplete="current-password">
+            <button type="button" id="toggle-password" class="toggle" aria-label="Tampilkan password">
+              <svg class="icon-eye" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="icon-eye-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/></svg>
+            </button>
+          </div>
+          <p class="error" id="password-error" role="alert"></p>
+        </div>
+
+        <div class="options">
+          <label class="remember">
+            <input type="checkbox" id="remember" name="remember">
+            <span>Remember me</span>
+          </label>
+        </div>
+
+        <button type="submit" id="submit-btn">Log In</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+
+        <p class="signup">No account yet? <a href="#">Sign Up</a></p>
+      </form>
+    </section>
+
+    <section class="login-image">
+      <div class="image-card">
+        <!-- Ganti src jika ingin memakai gambar lain -->
+        <img src="dentist_picture.jpg" alt="Dokter gigi sedang memeriksa pasien" onerror="this.style.display='none'">
+        <span class="placeholder">INI GAMBAR</span>
+      </div>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
